@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_notes"
+            android:icon="@drawable/ic_notes"
+            android:title="@string/notes" />
+        <item
+            android:id="@+id/nav_courses"
+            android:icon="@drawable/meme"
+            android:title="@string/courses" />
+        <item
+            android:id="@+id/nav_recent"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_recently" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/send"
+            android:icon="@drawable/ic_add_white_24dp"
+            android:title="@string/note_send"/>
+
+        <item
+            android:id="@+id/share"
+            android:icon="@drawable/ic_add_white_24dp"
+            android:title="@string/note_send"/>
+    </group>
+</menu>

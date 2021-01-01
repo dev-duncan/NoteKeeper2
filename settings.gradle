@@ -1,0 +1,4 @@
+include ':domain'
+include ':data'
+rootProject.name='NoteKeeper'
+include ':app'

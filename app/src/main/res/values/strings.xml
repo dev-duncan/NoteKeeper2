@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">NoteKeeperK</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_note_list">NoteListActivity</string>
+    <string name="note_label">NoteKeeper</string>
+    <string name="title_activity_list">ListActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="notes">Notes</string>
+    <string name="courses">Courses</string>
+    <string name="note_send">Send</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+    <string name="string_private_information">Private information</string>
+    <string name="string_email_address">Email address</string>
+
+    <string name="string_phone_number">Phone number</string>
+    <string name="default_email_address">John.Doe@defaultemail.com</string>
+
+    <string name="default_phone_number">16048555555</string>
+    <string name="default_name">John Doe</string>
+    <string name="string_name">Name</string>
+    <string name="string_gender">Gender</string>
+
+    <string name="default_username">John.Doe</string>
+    <string name="string_username">Username</string>
+
+    -<string-array name="gender_array">
+
+    <item>Male</item>
+
+    <item>Female</item>
+
+    <item>Not Specified</item>
+
+</string-array>
+
+    <!-- Fragment and Dialog Tags -->
+    <string name="dialog_change_photo">Change Photo</string>
+    <string name="fragment_account">Account</string>
+    <string name="fragment_settings">Settings</string>
+    <string name="reminder_notification">Reminder</string>
+
+    <string name="first_time_user_message">It seems like its your first time
+    login in the app
+    </string>
+    <string name="menu_recently">Recent Notes</string>
+    <string name="meet">meet</string>
+    <string name="action_backup">BackUP List</string>
+
+
+</resources>
+
+
