@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.notekeeperk.*
-import com.example.notekeeperk.ui.activities.NoteActivity
+import com.example.notekeeperk.ui.activities.EditActivity
 
 class NoteRecycleAdapter(private val context:Context, private val notes:List<com.example.data.NoteInfo>)
     : RecyclerView.Adapter<NoteRecycleAdapter.ViewHolder>() {
@@ -37,7 +37,7 @@ class NoteRecycleAdapter(private val context:Context, private val notes:List<com
         var notePosition = 0
         init {
             itemView?.setOnClickListener{
-                val intent = Intent(context, NoteActivity::class.java)
+                val intent = Intent(context, EditActivity::class.java)
                 intent.putExtra(NOTE_POSITION, notePosition)
                 context.startActivity(intent)
 

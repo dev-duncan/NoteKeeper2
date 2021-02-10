@@ -17,7 +17,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 import com.example.data.CourseInfo as NotekeeperkCourseInfo
 
-class NoteActivity : AppCompatActivity() {
+class EditActivity : AppCompatActivity() {
 
     private var notePosition = POSITION_NOT_SET
 

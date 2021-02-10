@@ -24,6 +24,8 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
 import androidx.preference.PreferenceManager
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -110,21 +112,23 @@ class ListActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
     }
 
     private fun initFab() {
+
         val fab: FloatingActionButton = findViewById(R.id.fab)
         fab.setOnClickListener { view ->
 
-            startActivity(Intent(this, NoteActivity::class.java))
+            startActivity(Intent(this, EditActivity::class.java))
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
 
         }
     }
 
-    override fun onSaveInstanceState(outState: Bundle?, outPersistentState: PersistableBundle?) {
-        super.onSaveInstanceState(outState, outPersistentState)
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
         if (outState != null)
             mViewModel.saveState(outState)
 
     }
+
 
     private fun isFirstTimeLogin() {
         val pref = PreferenceManager.getDefaultSharedPreferences(this)
@@ -260,7 +264,7 @@ class ListActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
         Snackbar.make(listItems,message,Snackbar.LENGTH_LONG).show()
     }
 
-    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item?.itemId) {
             R.id.action_settings -> {
                 //temporary method
@@ -312,7 +316,7 @@ class ListActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
     }
 
     private fun printToLog(message: String?){
-        Log.d(TAG, message)
+        message?.let { Log.d(TAG, it) }
     }
 
     override fun onDestroy() {

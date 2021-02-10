@@ -64,7 +64,7 @@ class SettingsFragment: PreferenceFragmentCompat(), Preference.OnPreferenceClick
     }
 
     private fun printToLog(message: String?) {
-        Log.d(TAG, message)
+        message?.let { Log.d(TAG, it) }
 
     }
 
